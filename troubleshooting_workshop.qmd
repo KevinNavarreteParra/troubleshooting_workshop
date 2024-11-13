@@ -270,6 +270,17 @@ install.packages(c("errorist", "reprex"))
 -   `errorist`: A package that will connect R to your browser and automatically look up an error or warning message for you when you run into trouble.
 -   `reprex`: A package that will help you create a reproducible example of your code, which is incredibly useful when asking for help on forums like StackOverflow.
 
+## If You'd Like a Copy
+
+```{r, eval=TRUE, echo=FALSE, results='asis'}
+library(qrcode)
+qr <- qr_code("https://kevinnavarreteparra.quarto.pub/on-troubleshooting/#/thank-you")
+
+plot(qr) 
+
+```
+
+
 # Thank you!
 
 ![[xkcd.com](https://xkcd.com/)](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png)
