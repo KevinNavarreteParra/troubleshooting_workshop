@@ -231,7 +231,7 @@ And, most importantly, don't be afraid to ask for help!
 
 ## Some Useful R Packages, If That's Your Thing
 
-```{r, eval=FALSE}
+```{r, eval=FALSE, results='asis', echo=TRUE}
 install.packages(c("errorist", "reprex"))
 ```
 
