@@ -207,6 +207,18 @@ When you get an explicit error, copy the error message to your browser or ChatGP
 When you get an implicit error, start by breaking down your code into its constituent parts and then testing each part individually to see where the error occurs.
 :::
 
+::: {.fragment .fade-in-then-semi-out}
+If you're stuck on what a function does, look it up online or read its documentation. The `?` operator in RStudio is your friend!
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r, echo=TRUE, results='asis', eval=FALSE}
+?mean
+help("mean")
+??mean
+```
+:::
+
 ## The Main Takeaway
 
 ::: {.fragment .fade-in-then-semi-out}
@@ -243,6 +255,7 @@ And, most importantly, don't be afraid to ask for help!
 -   [StackOverflow](https://stackoverflow.com/)
 -   [Top 10 Errors in R and How to Fix Them](https://statsandr.com/blog/top-10-errors-in-r/)
 -   [Handling Errors & Warnings in R \| List of Typical Messages & How to Solve](https://statisticsglobe.com/errors-warnings-r)
+-   [R Seek](https://rseek.org/)
 -   [ChatGPT](https://chatgpt.com/)
 -   [15 Common Errors in Python and How to Fix Them](https://betterstack.com/community/guides/scaling-python/python-errors/)
 -   [Common Errors in Python and How to Fix Them](https://www.freecodecamp.org/news/common-errors-in-python-and-how-to-fix-them/)
