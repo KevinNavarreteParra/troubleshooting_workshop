@@ -1,0 +1,4 @@
+- source: troubleshooting_workshop.qmd
+  quarto-pub:
+    - id: 3a2f12b9-bb57-41ce-9a1f-ddd9b29c5c69
+      url: 'https://kevinnavarreteparra.quarto.pub/on-troubleshooting'
