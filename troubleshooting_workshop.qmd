@@ -15,8 +15,6 @@ format:
 institute: "University of Nevada, Las Vegas"
 ---
 
-
-
 # Introduction
 
 ## What is this Guide?
@@ -28,7 +26,6 @@ While this guide primarily focuses on R, these principles are program-agnostic.
 ::: {.fragment .fade-in-then-semi-out}
 This guide is intended to help you troubleshoot your code, whether you use R, STATA, Python, or any other statistical software.
 :::
-
 
 # What is Code?
 
@@ -57,16 +54,16 @@ With that in mind...
 :::
 
 ::: {.fragment .fade-in}
--  **Nouns** are the objects you create.
--  **Verbs** are the functions you use to act on those noun objects.
--  **Adjectives** and **adverbs** are the arguments or modifiers that change the verb's behavior.
+-   **Nouns** are the objects you create.
+-   **Verbs** are the functions you use to act on those noun objects.
+-   **Adjectives** and **adverbs** are the arguments or modifiers that change the verb's behavior.
 :::
 
 # What is Code Actually Doing?
 
 ## You always start with your noun
 
-Let's work through an example so you can see what I mean: 
+Let's work through an example so you can see what I mean:
 
 ```{r, echo=TRUE, results='asis'}
 x <- c(1, 2, 3, 4, 5, NA)
@@ -77,7 +74,7 @@ I start by creating a vector `x` with the numbers 1 through 5 and an `NA` value.
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
-This is my noun. It can be whatever I want it to represent, and I can name it whatever I want. 
+This is my noun. It can be whatever I want it to represent, and I can name it whatever I want.
 :::
 
 ## A Noun is Nothing Without Some Action
@@ -102,7 +99,7 @@ mean(x, na.rm = TRUE)
 ```
 
 ::: {.fragment .fade-in-then-semi-out}
-What happens when you have a verb that you want to behave in a certain way? 
+What happens when you have a verb that you want to behave in a certain way?
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
@@ -124,6 +121,28 @@ mean(x, na.rm = TRUE)
 All together, this code is saying: "Create a vector `x` with the numbers 1 through 5 and an `NA` value. Calculate the mean of `x`, but ignore any `NA` value in `x`."
 :::
 
+## Kevin, this is a troubleshooting workshop, not a coding intro!
+
+::: {.fragment .fade-in-then-semi-out}
+I know, I know! But it's important to understand the basics of code--what it does and its syntax--to understand how to troubleshoot it.
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+It's also helpful to know that, like any other language, programming is a creative, open-ended process. 
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+And like language, you don't need to memorize every word in the dictionary, nor do you need to know every function in a programming language. 
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+Of course, there are a few things that are used more frequently than others. Just like in English we use "the" more than "antidisestablishmentarianism", in R we use `mean()` far more often than `strtrim()`.
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+My point is that the *more useful* skills are knowing the code's basics and how to find the information you need when you need it.
+:::
+
 # On Troubleshooting
 
 ## How Does this Relate to Troubleshooting Code?
@@ -140,7 +159,7 @@ If I know I have a vector `x` whose mean I want to calculate, and I also have an
 If I know that calculating a mean should result in a single number, but I get an `NA` value, something clearly went wrong despite my code running without any errors.
 :::
 
-## What is an Error, Then? 
+## What is an Error, Then?
 
 ::: {.fragment .fade-in-then-semi-out}
 An error occurs whenever you have a discrepancy between what you want your code to do and what your code is actually doing.
@@ -218,16 +237,16 @@ And, most importantly, don't be afraid to ask for help!
 
 ## Some Useful Resources I Won't Cover
 
-- [R for Data Science](https://r4ds.hadley.nz/)
-- [Advanced R: Chapter 22 on Debugging](https://adv-r.hadley.nz/debugging.html)
-- [RStudio Cheatsheets](https://rstudio.github.io/cheatsheets/)
-- [StackOverflow](https://stackoverflow.com/)
-- [Top 10 Errors in R and How to Fix Them](https://statsandr.com/blog/top-10-errors-in-r/)
-- [Handling Errors & Warnings in R | List of Typical Messages & How to Solve](https://statisticsglobe.com/errors-warnings-r)
-- [ChatGPT](https://chatgpt.com/)
-- [15 Common Errors in Python and How to Fix Them](https://betterstack.com/community/guides/scaling-python/python-errors/)
-- [Common Errors in Python and How to Fix Them](https://www.freecodecamp.org/news/common-errors-in-python-and-how-to-fix-them/)
-- [Error Messages in STATA](https://www.stata.com/manuals/u8.pdf)
+-   [R for Data Science](https://r4ds.hadley.nz/)
+-   [Advanced R: Chapter 22 on Debugging](https://adv-r.hadley.nz/debugging.html)
+-   [RStudio Cheatsheets](https://rstudio.github.io/cheatsheets/)
+-   [StackOverflow](https://stackoverflow.com/)
+-   [Top 10 Errors in R and How to Fix Them](https://statsandr.com/blog/top-10-errors-in-r/)
+-   [Handling Errors & Warnings in R \| List of Typical Messages & How to Solve](https://statisticsglobe.com/errors-warnings-r)
+-   [ChatGPT](https://chatgpt.com/)
+-   [15 Common Errors in Python and How to Fix Them](https://betterstack.com/community/guides/scaling-python/python-errors/)
+-   [Common Errors in Python and How to Fix Them](https://www.freecodecamp.org/news/common-errors-in-python-and-how-to-fix-them/)
+-   [Error Messages in STATA](https://www.stata.com/manuals/u8.pdf)
 
 ## Some Useful R Packages, If That's Your Thing
 
@@ -235,11 +254,9 @@ And, most importantly, don't be afraid to ask for help!
 install.packages(c("errorist", "reprex"))
 ```
 
-- `errorist`: A package that will connect R to your browser and automatically look up an error or warning message for you when you run into trouble.
-- `reprex`: A package that will help you create a reproducible example of your code, which is incredibly useful when asking for help on forums like StackOverflow.
-
+-   `errorist`: A package that will connect R to your browser and automatically look up an error or warning message for you when you run into trouble.
+-   `reprex`: A package that will help you create a reproducible example of your code, which is incredibly useful when asking for help on forums like StackOverflow.
 
 # Thank you!
 
 ![[xkcd.com](https://xkcd.com/)](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png)
-
