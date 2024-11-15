@@ -128,15 +128,15 @@ I know, I know! But it's important to understand the basics of code--what it doe
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
-It's also helpful to know that, like any other language, programming is a creative, open-ended process. 
+It's also helpful to know that, like any other language, programming is a creative, open-ended process.
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
-And like language, you don't need to memorize every word in the dictionary, nor do you need to know every function in a programming language. 
+And like language, you don't need to memorize every word in the dictionary, nor do you need to know every function in a programming language.
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
-Of course, there are a few things that are used more frequently than others. Just like in English we use "the" more than "antidisestablishmentarianism", in R we use `mean()` far more often than `strtrim()`.
+Of course, there are a few things that are used more frequently than others. Just like in English we use "the" more than "discursive", in R we use `summary()` far more often than `strtrim()`.
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
@@ -279,7 +279,6 @@ qr <- qr_code("https://kevinnavarreteparra.quarto.pub/on-troubleshooting/#/thank
 plot(qr) 
 
 ```
-
 
 # Thank you!
 
